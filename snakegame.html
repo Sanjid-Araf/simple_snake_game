@@ -6,6 +6,7 @@
     <title>Simple Snake Game</title>
     <link rel="stylesheet" href="snakegame.css">
 </head>
+    <!-- starting from here-->
 <body>
     <div id="container">
         <h1>Simple Snake Game</h1>
@@ -13,20 +14,21 @@
             <canvas id="gameCanvas" width="400" height="400"></canvas>
         </div>
         <div id="controls">
-            <button id="start-btn">Start</button>
-            <button id="pause-btn" disabled>Pause</button>
-            <button id="restart-btn" disabled>Restart</button>
-            <label for="level">Level:</label>
+            <button id="start-btn">Start</button> <!-- start button-->
+            <button id="pause-btn" disabled>Pause</button> <!-- pause button-->
+            <button id="restart-btn" disabled>Restart</button><!-- restart button-->
+            
+            <label for="level">Level:</label> <!-- leveling start here -->
             <select id="level">
                 <option value="200">Easy</option>
                 <option value="100" selected>Medium</option>
                 <option value="50">Hard</option>
             </select>
         </div>
-        <div id="score">
+        <div id="score"> <!-- scores -->
             <p>Points: <span id="points">0</span></p>
         </div>
-        <div id="result"></div>
+        <div id="result"></div> <!-- end result -->
     </div>
     <script src="snakegamejs.js"></script>
 </body>
